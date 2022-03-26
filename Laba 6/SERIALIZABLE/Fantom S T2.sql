@@ -1,0 +1,10 @@
+--Фантом. Т2. Уровень изоляции SERIALIZABLE
+USE TV_journalism
+GO
+
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE
+BEGIN TRANSACTION 
+
+INSERT INTO EMPLOYEE VALUES ('Иван', 'Иванович','Иванов', 1, 1, 1, 2800)
+COMMIT
+

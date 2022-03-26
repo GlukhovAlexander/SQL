@@ -1,0 +1,9 @@
+--Фантом. Т2. Уровень изоляции REPEATABLE READ
+USE TV_journalism
+GO
+
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ
+BEGIN TRANSACTION 
+
+INSERT INTO EMPLOYEE VALUES ('Иван', 'Иванович','Иванов', 1, 1, 1, 2800)
+COMMIT

@@ -1,0 +1,6 @@
+SELECT DEPARTMENT.name, LOCATION.regional_group, COUNT(EMPLOYEE.employee_id) AS num_of_emp, AVG(DATEDIFF(DAY,EMPLOYEE.hire_date,CURRENT_TIMESTAMP)) AS work_exp
+FROM DEPARTMENT
+RIGHT JOIN EMPLOYEE ON (EMPLOYEE.department_id = DEPARTMENT.department_id)
+LEFT JOIN LOCATION ON (LOCATION.location_id = DEPARTMENT.location_id)
+GROUP BY  DEPARTMENT.name, LOCATION.regional_group
+ORDER BY work_exp DESC

@@ -1,0 +1,4 @@
+SELECT CUSTOMER.name, COUNT(SALES_ORDER.order_id) AS purch_num, SUM(SALES_ORDER.total)/(MAX(YEAR(SALES_ORDER.order_date)) - MIN(YEAR(SALES_ORDER.order_date)) + 1) AS avg_sum 
+FROM CUSTOMER
+JOIN SALES_ORDER ON (CUSTOMER.customer_id = SALES_ORDER.customer_id)
+GROUP BY CUSTOMER.name

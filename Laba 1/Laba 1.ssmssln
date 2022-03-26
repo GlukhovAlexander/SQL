@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 18.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Laba 1", "Laba 1\Laba 1.ssmssqlproj", "{B23A1EA7-0D02-48F7-9B2A-1E9FA52F7DF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B23A1EA7-0D02-48F7-9B2A-1E9FA52F7DF5}.Default|Default.ActiveCfg = Default
+		{9D22C152-1094-4076-8743-F59B8EF0C79C}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81D4CEB5-E113-4515-84BB-D6E702C9830E}
+	EndGlobalSection
+EndGlobal
